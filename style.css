@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background: #3ec079;
+}
+.navbar span{
+    padding: 0 30px;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.container{
+    padding: 80px 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    /* background: rgb(197, 139, 139); */
+    width: 300px;
+}
+label{
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+input{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #379453;
+    background: #c3dbc5;
+}
+.btn-clean{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #4190da;
+    padding: 20px;
+    right: -95px;
+    top: 50%;
+    transition: all 0.3s;
+}
+.btn-clean:hover{
+    cursor: pointer;
+    background: #3375b3;
+    right: 0px;
+
+}
+.text-btn{
+    padding: 0 5px 0 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.btn-clean i{
+    color: #fff;
+    font-size: 20px;
+}
+.estado{
+    height: 30px;
+    /* background: #df4444; */
+    border: 1px solid #666666;
+    text-align: center;
+}
+.estado .text-estado{
+    color: #242424;
+    line-height: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}

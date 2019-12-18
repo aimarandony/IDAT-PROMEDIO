@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDAT | PROMEDIO</title>
+    <script src="https://kit.fontawesome.com/8719a7912f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <span class="navbar-brand font-weight-bold">PROMEDIO IDAT - CICLO IV</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <label>Evaluación Continua 01:</label>
+            </div>
+            <div class="column">
+                <input type="text" class="o-input" id="ec01">
+            </div>
+            <div class="column">
+                <label>Evaluación Continua 02:</label>
+            </div>
+            <div class="column">
+                <input type="text" class="o-input" id="ec02">
+            </div>
+            <div class="column">
+                <label>Evaluación Continua 03:</label>
+            </div>
+            <div class="column">
+                <input type="text" class="o-input" id="ec03">
+            </div>
+            <div class="column">
+                <label>Evaluación Final:</label>
+            </div>
+            <div class="column">
+                <input type="text" class="o-input" id="ef">
+            </div>
+            <div class="column">
+                <label>Promedio:</label>
+            </div>
+            <div class="column">
+                <input type="text" class="o-input" id="promedio" value="0" readonly>
+            </div>
+            <div class="estado" id="c-estado">
+                <p class="text-estado" id="text-estado">ESTADO</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-clean" id="btn-clean">
+        <i class="fas fa-broom"></i> <p class="text-btn">LIMPIAR</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
