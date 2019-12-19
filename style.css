@@ -25,12 +25,17 @@ body{
     letter-spacing: 3px;
 }
 .container{
-    padding: 80px 50px;
+    padding: 50px 50px;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.row{
+    border: 1px solid #b6b6b6;
+    padding: 15px;
+    margin: 0 10px;
 }
 .column{
     /* background: rgb(197, 139, 139); */
@@ -67,7 +72,6 @@ input{
     cursor: pointer;
     background: #3375b3;
     right: 0px;
-
 }
 .text-btn{
     padding: 0 5px 0 10px;
@@ -90,4 +94,69 @@ input{
     line-height: 30px;
     font-size: 12px;
     letter-spacing: 2px;
+}
+.select{
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #379453;
+    background: #c3dbc5;
+}
+.btnAgendar{
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #267e8a;
+    background: #267e8a;
+    color: #fff;
+    transition: all 0.3s;
+}
+.btnAgendar:hover{
+    cursor: pointer;
+    border: 1px solid #33929e;
+    background: #33929e;
+    letter-spacing: 3px;
+}
+.row02{
+    min-width: 462px;
+}
+.tabla {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabla thead tr th{
+    text-align: center;
+    padding: 10 30px;
+    background: #3da75c;
+    color: #fff;
+}
+.tabla td, .tabla th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.tabla tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tabla tr:hover {
+    background-color: #ddd;
+}
+
+.tabla tbody tr td{
+    text-align: center;
+}
+
+.c-table{
+    max-height: 250px;
+    overflow: auto;
+}
+.input-nombre{
+    border: 1px solid #3375b3;
+    background: #a1c3e2;
 }
