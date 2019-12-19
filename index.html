@@ -15,6 +15,21 @@
     <div class="container">
         <div class="row">
             <div class="column">
+                <label>Curso:</label>
+            </div>
+            <div class="column">
+                <!-- <input type="text" class="o-input" id="curso"> -->
+                <select class="select" id="curso">
+                    <option value="ARQ. DE SIS. DE INFORMACIÓN">ARQ. DE SIS. DE INFORMACIÓN</option>
+                    <option value="DES. AVANZADO DE APLICACIONES 2">DES. AVANZADO DE APLICACIONES 2</option>
+                    <option value="DES. DE APLICACIÓN WEB">DES. DE APLICACIÓN WEB</option>
+                    <option value="HERRAMIENTAS DE PROGRAMACIÓN II">HERRAMIENTAS DE PROGRAMACIÓN II</option>
+                    <option value="INGLES PARA EL TRABAJO">INGLES PARA EL TRABAJO</option>
+                    <option value="MÉTODO ÁGIL">MÉTODO ÁGIL</option>
+                    <option value="PROY. CERT. DES. SOFTWARE II">PROY. CERT. DES. SOFTWARE II</option>
+                </select>
+            </div>
+            <div class="column">
                 <label>Evaluación Continua 01:</label>
             </div>
             <div class="column">
@@ -46,6 +61,27 @@
             </div>
             <div class="estado" id="c-estado">
                 <p class="text-estado" id="text-estado">ESTADO</p>
+            </div>
+            <div class="column" id="btnAgendar">
+                <button class="btnAgendar">
+                    AGENDAR
+                </button>
+            </div>
+        </div>
+        <div class="row row02">
+            <input type="text" class="o-input input-nombre" id="alumno">
+            <div class="c-table">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>CURSO</th>
+                            <th>PROMEDIO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
