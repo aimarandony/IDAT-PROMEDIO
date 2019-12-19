@@ -6,8 +6,32 @@ $(document).ready(()=>{
     var evc03 = $('#ec03');
     var evf = $('#ef');
     var promedio = $('#promedio');
+    var curso = $('#curso');
+    var btn = $('#btnAgendar');
+    var tbody = $('#tbody');
+    var alumno = $('#alumno');
 
-    console.log(evc01,evc02,evc03,evf,promedio);
+    var count = 0;
+    btn.click(()=>{        
+        if(alumno.val() === ''){
+            let nombre = prompt('¿Cual es su nombre distinguida damo?');
+            alumno.val(nombre);            
+        } else{
+            count++;
+            let cur = curso.val();
+            let prom = promedio.val();
+            console.log(cur,prom);
+            template = `
+                        <tr>
+                            <td>${count}</td>
+                            <td>${cur}</td>
+                            <td>${prom}</td>
+                        </tr>
+                        `;
+            tbody.append(template);
+        } 
+        
+    });
 
     function formula(){
         let e01 = Number(evc01.val()) * 0.04;
@@ -62,5 +86,8 @@ $(document).ready(()=>{
         cestado.css('background','#fff');
         textestado.html('ESTADO');
         textestado.css('color','#242424');
+        tbody.html('');
+        alumno.val('');
+        count = 0;
     });
 });
