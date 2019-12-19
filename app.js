@@ -16,20 +16,19 @@ $(document).ready(()=>{
         if(alumno.val() === ''){
             let nombre = prompt('¿Cual es su nombre distinguida damo?');
             alumno.val(nombre);            
-        } else{
-            count++;
-            let cur = curso.val();
-            let prom = promedio.val();
-            console.log(cur,prom);
-            template = `
-                        <tr>
-                            <td>${count}</td>
-                            <td>${cur}</td>
-                            <td>${prom}</td>
-                        </tr>
-                        `;
-            tbody.append(template);
-        } 
+        }
+        count++;
+        let cur = curso.val();
+        let prom = promedio.val();
+        console.log(cur, prom);
+        template = `
+                    <tr>
+                        <td>${count}</td>
+                        <td>${cur}</td>
+                        <td>${prom}</td>
+                    </tr>
+                    `;
+        tbody.append(template);
         
     });
 
